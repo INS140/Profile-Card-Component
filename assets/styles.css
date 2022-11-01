@@ -118,12 +118,12 @@ p span {
 
 @media screen and (min-width: 800px) {
     .img1 {
-        left: -489px;
+        left: -250px;
         top: -489px;
     }
     
     .img2 {
-        right: -489px;
-        bottom: -489px;
+        right: -250px;
+        bottom: -600px;
     }
 }
