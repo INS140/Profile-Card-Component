@@ -2,34 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Profile card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon.ico">
+  <link rel="stylesheet" href="./assets/styles.css">
+  <title>INS140 | Profile card component</title>
 </head>
-<body>
-  Victor Crest
-  26
-  London
-
-  80K
-  Followers
-
-  803K
-  Likes
-
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+<body class="flex-col">
+  <div aria-hidden="true" class="bg-images">
+    <img class="img1" src="./assets/images/bg-pattern-top.svg" alt="background image">
+    <img class="img2" src="./assets/images/bg-pattern-bottom.svg" alt="background image">
   </div>
+  <main>
+    <div class="card-container flex-col">
+      <div class="image-container">
+        <img class="profile-image" src="./assets/images/image-victor.jpg" alt="Profile image">
+      </div>
+      <div class="text-container flex-col">
+        <div class="name-age flex-row">
+          <h1>Victor Crest</h1>
+          <h2>26</h2>
+        </div>
+        <h3>London</h3>
+        <div class="stats-container flex-row">
+          <p>80K<span>Followers</span></p>
+          <p>803K<span>Likes</span></p>
+          <p>1.4K<span>Photos</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/INS140" target="_blank">INS140</a>.
+    </div>
+  </main>
 </body>
 </html>
